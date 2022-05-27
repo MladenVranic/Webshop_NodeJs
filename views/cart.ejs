@@ -1,0 +1,32 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../style/cart.css">
+  <link rel="stylesheet" href="../style/navbar.css">
+  <title>Simple Webshop</title>
+</head>
+
+<body>
+
+<%- include('navigation') -%>
+  <div class="basket__header">
+    <h2>Cart</h2>
+  </div>
+  <div class=basket__artikels>
+
+    <% items.forEach(function(select) { %>
+        <div class = wrnkrb-artikels>
+          <div class="cart-names"><h3><%= select.name %> &nbsp; <%= select.preis %> € &nbsp; <%= select.anzahl %>x</h3></div>
+      </div>
+    <%  }); %>
+
+  <br><br><br>
+    <div class="basket__total">
+      <span class="basket__total-titel">Total</span>
+      <span class="basket__total-preis" > €</span>
+    </div>
+  </div>
+
+  <%- include('footer') -%>
+</body>

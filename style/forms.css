@@ -1,0 +1,118 @@
+/*---------------------------------
+Styling for Login and Registration
+----------------------------------- */
+/* Styling the Logo */
+.logo {
+  padding-left: 2rem; /* Space between the Logo and the Border of the Header */
+}
+
+/* Styling the Links in the NavigationBar */
+.links {
+  display: flex;
+  justify-content: space-around;
+  padding-right: 2rem; /* Space between the Links and the Border of the Header */
+}
+
+.links a {
+  padding-left: 1rem; /* Space between the Links */
+  text-decoration: none;
+  color: black;
+}
+
+/* Styling the whole Page-Body */
+.body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  margin-top: 5.5rem;
+}
+
+/* Styling the Form */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  margin: 1rem;
+  padding: 2rem;
+  box-shadow: 0 0 40px lightgray;
+  border-radius: 10px;
+  background: lightgray;
+}
+
+/* Styling the Close button */
+.close {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.close a {
+  text-decoration: none;
+}
+
+/* Styling the Input-Fields */
+/* Space between the Input-Fields and the LogIn-Button */
+.input__group {
+  margin-bottom: 1rem;
+}
+
+/* The Input-Fields themselves */
+.input {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 2px solid #949494;
+  outline: none;
+  background: lightgray;
+  transition: background 0.2s ease-in, border-color 0.2s ease-in;
+}
+
+/* When a fild is clicked to fill-out */
+.input:focus {
+  border-color: skyblue;
+  background: #ffffff;
+}
+
+/* Styling the Button */
+.button {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-size: 1.4rem;
+  color: #ffffff;
+  background: #ff7c7c;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: #fc4d4d;
+}
+
+/* Makes the Button 2% smaller when clicked */
+.button:active {
+  transform: scale(0.98);
+}
+
+/* Styling the two Links in the LogIn-Box */
+.text {
+  text-align: center;
+}
+
+.link {
+  color: navy;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.link:hover {
+  text-decoration: underline;
+  color: #0606c2;
+}

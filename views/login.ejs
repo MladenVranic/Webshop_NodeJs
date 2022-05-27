@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webshop</title>
+    <link rel="stylesheet" href="../style/forms.css" />
+    <link rel="stylesheet" href="../style/navbar.css" />
+    <!-- From here, down to the head-Tag i the import for Google-Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header-Section -->
+    <%- include('navigation') -%>
+    <!-- Page-Body Section -->
+  <div class="body">
+    <div class="container">
+      <form method="POST" action="/login" class="form">
+        <div class="close">
+          <h1 class="title">Login</h1>
+          <a href="/register">&#10539;</a>
+        </div>
+        <!-- Input-Field for the E-Mail Adress -->
+        <div class="input__group">
+          <input type="text" class="input" name="name" placeholder="Username" />
+        </div>
+        <!-- Input-Field for the Password -->
+        <div class="input__group">
+          <input type="password" class="input" name="password" placeholder="Password" />
+        </div>
+        <!-- Confirm / LogIn Button -->
+        <button class="button" type="submit">Login</button>
+        <!-- Link to SignUp if the User has no Account -->
+        <p class="text">
+          <a href="/register" class="link">Don't have an Account yet? SignUp now!</a>
+        </p>
+      </form>
+    </div>
+  </div>
+
+    <script src="../script/script.js"></script>
+    <%- include('footer') -%>
+  </body>
+</html>

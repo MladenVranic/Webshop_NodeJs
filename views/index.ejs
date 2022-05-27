@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webshop</title>
+    <link rel ="stylesheet" href="../style/index.css">
+    <link rel ="stylesheet" href="../style/navbar.css">
+    <script src = "../script/script.js" async></script>
+</head>
+
+<body>
+
+    <%- include('navigation') -%>
+
+<div id="main">
+
+<div>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img class="slide-bild" src="../assets/p4.png">
+      <div class="text">Wonderful offers in our Black Friday Sale</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img class="slide-bild" src="../assets/p5.png">
+      <div class="text">Mega Sale!!</div>
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img class="slide-bild" src="../assets/p6.png">
+      <div class="text">The perfekt surprise for a Lady</div>
+    </div>
+</div>
+
+<div class = "text-container">
+
+<p>WELCOME TO OUR WEBSHOP</p>
+
+</div>
+
+<!-- Modal content -->
+<div class="modal">
+
+<div class="modal-inhalt">
+    <div class="modal-header">
+      <span class = "close">&times;</span>
+      <h2><%= artikelOne_name %></h2>
+    </div>
+    <div class="modal-body">
+      <div class = "modal-bild">
+      <img class="str-bild" src = "../assets/Poster.jpg">
+      </div>
+      <p><%= artikelOne_des %></p>
+    </div>
+  </div>
+</div>
+</div>
+<div class="modal">
+<div class="modal-inhalt">
+    <div class="modal-header">
+      <span class = "close">&times;</span>
+      <h2><%= artikelTwo_name %></h2>
+    </div>
+    <div class="modal-body">
+      <div class = "modal-bild">
+      <img class="str-bild" src="../assets/tshirt.jpg">
+      </div>
+      <p><%= artikelTwo_des %></p>
+    </div>
+  </div>
+</div>
+
+<div class="modal">
+<div class="modal-inhalt">
+    <div class="modal-header">
+      <span class = "close">&times;</span>
+      <h2><%= artikelThree_name %></h2>
+    </div>
+    <div class="modal-body">
+      <div class = "modal-bild">
+      <img class="str-bild" src="../assets/Pflanze.jpg">
+      </div>
+      <p><%= artikelThree_des %></p>
+    </div>
+  </div>
+</div>
+
+<div class="modal">
+<div class="modal-inhalt">
+    <div class="modal-header">
+      <span class = "close">&times;</span>
+      <h2><%= artikelfour_name %></h2>
+    </div>
+    <div class="modal-body">
+      <div class = "modal-bild">
+      <img class="str-bild" src="../assets/Monitor.jpg">
+      </div>
+      <p><%= artikelFour_des %></p>
+    </div>
+  </div>
+</div>
+
+<div class="modal">
+<div class="modal-inhalt">
+    <div class="modal-header">
+      <span class = "close">&times;</span>
+      <h2><%= artikelFive_name %></h2>
+    </div>
+    <div class="modal-body">
+      <div class = "modal-bild">
+      <img class="str-bild" src="../assets/maus.jpg">
+      </div>
+      <p><%= artikelFive_des %></p>
+    </div>
+  </div>
+</div>
+
+<div class="modal">
+<div class="modal-inhalt">
+    <div class="modal-header">
+      <span class = "close">&times;</span>
+      <h2><%= artikelSix_name %></h2>
+    </div>
+    <div class="modal-body">
+      <div class = "modal-bild">
+      <img class="str-bild" src="../assets/tastatur.jpg">
+      </div>
+      <p><%= artikelSix_des %></p>
+    </div>
+  </div>
+</div>
+
+<div class="modal">
+<div class="modal-inhalt">
+    <div class="modal-header">
+      <span class = "close">&times;</span>
+      <h2><%= artikelSeven_name %></h2>
+    </div>
+    <div class="modal-body">
+      <div class = "modal-bild">
+      <img class="str-bild" src="../assets/teppich.jpg">
+      </div>
+      <p><%= artikelSeven_des %></p>
+    </div>
+  </div>
+</div>
+<div class="modal">
+<div class="modal-inhalt">
+    <div class="modal-header">
+      <span class = "close">&times;</span>
+      <h2><%= artikelEight_name %></h2>
+    </div>
+    <div class="modal-body">
+      <div class = "modal-bild">
+      <img class="str-bild" src="../assets/notavailable.png">
+      </div>
+      <p><%= artikelEight_des %></p>
+    </div>
+  </div>
+</div>
+<div class="modal">
+<div class="modal-inhalt">
+    <div class="modal-header">
+      <span class = "close">&times;</span>
+      <h2><%= artikelNine_name %></h2>
+    </div>
+    <div class="modal-body">
+      <div class = "modal-bild">
+      <img class="str-bild" src="../assets/jskurs.png">
+      </div>
+      <p><%= artikelNine_des %></p>
+    </div>
+  </div>
+</div>
+
+
+<div>
+  <h1 id ="scrollStore">Products</h1>
+  <table>
+    <tbody>
+    <tr>
+        <td>
+            <div class = "str-artikel">
+                <img class = "str-bild" src = "../assets/Poster.jpg">
+                <button class ="modal-btn" role = "button">More Information</button>
+                <form method="post" action="/index">
+                    <textarea class = "str-titel"  name="artikelName" col="1" rows="1"><%= artikelOne_name %></textarea>
+                    <div class = "str-infos">
+                        <input class = "preis" type = "text" name="artikelPreis" value="<%= artikelOne_preis %>"></input>
+                        <input class = "button button-style button-wrnkrb" role = "button" value="ADD TO CART" type="submit"></input>
+                    </div>
+                </form>
+            </div>
+        </td>
+        <td>
+            <div class = "str-artikel">
+                <img class = "str-bild" src = "../assets/tshirt.jpg">
+                <button class ="modal-btn" role = "button">More Information</button>
+                <form method= "post" action="/index">
+                    <textarea class = "str-titel" name="artikelName" col="1" rows="1"><%= artikelTwo_name %></textarea>
+                    <div class = "str-infos">
+                        <input class = "preis" type = "text" name="artikelPreis" value="<%= artikelTwo_preis %>"></input>
+                        <input class = "button button-style button-wrnkrb" role = "button" value="ADD TO CART" type="submit"></input>
+                    </div>
+                </form>
+            </div>
+        </td>
+        <td>
+            <div class = "str-artikel">
+                <img class = "str-bild" src = "../assets/Pflanze.jpg">
+                <button class ="modal-btn" role = "button">More Information</button>
+                <form method= "post" action="/index">
+                    <textarea class = "str-titel"  name="artikelName" value="" col="1" rows="1"><%= artikelThree_name %></textarea>
+                    <div class = "str-infos">
+                        <input class = "preis" type = "text" name="artikelPreis" value="<%= artikelThree_preis %>"></input>
+                        <input class = "button button-style button-wrnkrb" role = "button" value="ADD TO CART" type="submit"></input>
+                    </div>
+                </form>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class = "str-artikel">
+                <img class = "str-bild" src = "../assets/Monitor.jpg">
+                <button class ="modal-btn" role = "button">More Information</button>
+                <form method= "post" action="/index">
+                    <textarea class = "str-titel" name="artikelName" col="1" row="1"><%= artikelfour_name %></textarea>
+                    <div class = "str-infos">
+                        <input class = "preis" type = "text" name="artikelPreis" value="<%= artikelfour_preis %>"></input>
+                        <input class = "button button-style button-wrnkrb" role = "button" value="ADD TO CART" type="submit"></input>
+                    </div>
+                </form>
+            </div>
+        </td>
+        <td>
+            <div class = "str-artikel">
+                <img class = "str-bild" src = "../assets/maus.jpg">
+                <button class ="modal-btn" role = "button">More Information</button>
+                <form method= "post" action="/index">
+                    <textarea class = "str-titel" name="artikelName" col="1" row="1"><%= artikelFive_name %></textarea>
+                    <div class = "str-infos">
+                        <input class = "preis" type = "text" name="artikelPreis" value="<%= artikelFive_preis %>"></input>
+                        <input class = "button button-style button-wrnkrb" role = "button" value="ADD TO CART" type="submit"></input>
+                    </div>
+                </form>
+            </div>
+        </td>
+        <td>
+            <div class = "str-artikel" >
+                <img class = "str-bild" src = "../assets/tastatur.jpg">
+                <button class ="modal-btn" role = "button">More Information</button>
+                <form method= "post" action="/index">
+                    <textarea class = "str-titel" name="artikelName" col="1" row="1"><%= artikelSix_name %></textarea>
+                    <div class = "str-infos">
+                        <input class = "preis" type = "text" name="artikelPreis" value="<%= artikelSix_preis %>"></input>
+                        <input class = "button button-style button-wrnkrb" role = "button" value="ADD TO CART" type="submit"></input>
+                    </div>
+                </form>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <div class = "str-artikel">
+                <img class = "str-bild" src = "../assets/teppich.jpg">
+                <button class ="modal-btn" role = "button">More Information</button>
+                <form method= "post" action="/index">
+                    <textarea class = "str-titel" name="artikelName" col="1" row="1"><%= artikelSeven_name %></textarea>
+                    <div class = "str-infos">
+                        <input class = "preis" type = "text" name="artikelPreis" value="<%= artikelSeven_preis %>"></input>
+                        <input class = "button button-style button-wrnkrb" role = "button" value="ADD TO CART" type="submit"></input>
+                    </div>
+                </form>
+            </div>
+        </td>
+        <td>
+            <div class = "str-artikel" >
+                <img class = "str-bild" src = "../assets/notavailable.png">
+                <button class ="modal-btn" role = "button">More Information</button>
+                <form method= "post" action="/index">
+                    <textarea class = "str-titel" name="artikelName" col="1" row="1"><%= artikelEight_name %></textarea>
+                    <div class = "str-infos">
+                        <input class = "preis" type = "text" name="artikelPreis" value="<%= artikelEight_name %>"> </input>
+                        <input class = "button button-style button-wrnkrb" role = "button" value="ADD TO CART"  type="submit"></input>
+                    </div>
+                </form>
+            </div>
+        </td>
+        <td>
+            <div class = "str-artikel">
+                <img class = "str-bild" src="../assets/jskurs.png"">
+                <button class ="modal-btn" role = "button">More Information</button>
+                <form method= "post" action="/index">
+                    <textarea class = "str-titel" name="artikelName" col="1" row="1"><%= artikelNine_name %></textarea>
+                    <div class = "str-infos">
+                        <input class = "preis" type = "text" name="artikelPreis" value="<%= artikelNine_preis %>"></input>
+                        <input class = "button button-style button-wrnkrb" role = "button" value="ADD TO CART"  type="submit"></input>
+                    </div>
+                </form>
+            </div>
+        </td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<a href = "#main"><button id ="backtoTop">BACK TO TOP</button></a>
+<%- include('footer') -%>
+</body>
+</html>

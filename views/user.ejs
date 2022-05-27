@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/profile.css">
+    <link rel="stylesheet" href="../style/navbar.css" />
+    <title>Webshop</title>
+  </head>
+  <body>
+  <%- include('navigation') -%>
+  <!-- Body-Section -->
+    <div class="body">
+      <div class="test">
+        <h2 class="section">
+          <u>Profile</u>
+        </h2>
+        <p>Username: <%= username %> </p>
+        <p>First Name: <%= fName %></p>
+        <p>Last Name: <%= lName %></p>
+        <p>E-Mail Adress: <%= email %></p>
+      </div>
+      <hr/>
+    </div>
+  <%- include('footer') -%>
+  </body>
+</html>

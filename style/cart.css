@@ -1,0 +1,72 @@
+/*---------------------
+Style for the Basket
+-----------------------*/
+
+/* Styling the Basket */
+/* Basked Header */
+.basket__header {
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Basket-item */
+.basket__total-artikels {
+  width: 45%;
+}
+
+/* Basket-total */
+.basket__total {
+  text-align: center;
+
+}
+
+/* Basket-total-title */
+.basket__total-titel {
+  font-weight: bold;
+  font-size: 1em;
+  color: black;
+  margin-right: 20px;
+}
+
+/* Basket-total-price */
+.basket__total-preis {
+  color: grey;
+  font-size: 1em;
+}
+.basket__artikels{
+  text-align: center;
+  margin-bottom:5%;
+}
+
+/* Purchase-Button */
+.button {
+  display: block;
+  margin: 10px auto;
+  font-size: 1rem;
+  color: white;
+  background-color: #ff7c7c;
+  border: none;
+  border-radius: 0.3em;
+  width: 120px;
+  padding: 8px;
+}
+
+.button:hover {
+  background-color: #fc4d4d;
+}
+
+.cart-prices{
+  margin-left:10px;
+}
+.wrnkrb-artikels{
+  display:flex;
+  flex-direction: column;
+  border-bottom: 1px solid grey;
+  width:300px;
+  margin:0 auto;
+
+}
